@@ -9,9 +9,19 @@ compare the human choice with the computer choice to decide the result
 */
 
 function getComputerChoice(){
-    let rockPaperScissors = ["rock", "paper", "scissors"]
+    let rockPaperScissors = ["rock", "paper", "scissors"];
+
     let computerChoice = Math.floor(Math.random() * 3);
+
     return rockPaperScissors[computerChoice];
 }
 
+function getHumanChoice(){
+    let humanChoice =  prompt("Choose between rock, paper or scissors");
+
+    return humanChoice;
+}
+
+let humanScore = 0;
+let computerScore = 0;
 
